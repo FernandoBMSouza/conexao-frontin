@@ -1,0 +1,7 @@
+{
+  "name": "conexao-frontin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
