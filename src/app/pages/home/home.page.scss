@@ -1,0 +1,32 @@
+.avatar-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+  }
+  
+  .sec-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .sec-button-container ion-avatar {
+    margin-bottom: 5px; /* Espaço entre o avatar e o label */
+  }
+  
+  .horizontal-list {
+    display: flex;
+    flex-direction: row; /* Define a direção como horizontal */
+    overflow-x: scroll; /* Adiciona uma barra de rolagem horizontal caso haja muitos itens */
+  }
+  
+  .horizontal-item {
+    flex: 0 0 auto; /* Evita que os itens cresçam para preencher todo o espaço */
+    margin-right: 10px; /* Espaçamento entre os itens */
+  }
+  
+  .sec-list-container {
+    width: 100%; /* Certifica-se de que a lista horizontal ocupa todo o espaço disponível */
+  }
+  

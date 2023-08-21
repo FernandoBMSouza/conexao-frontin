@@ -13,4 +13,33 @@
       <ion-title size="large">home</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <div class="avatar-container">
+    <ion-avatar>
+      <img alt="Logo" src=".\assets\images\logo_ver3.jpeg" />
+    </ion-avatar>
+  </div>
+
+  <div class="sec-list-container ion-flex">
+    <!-- First Line -->
+    <ion-list class="horizontal-list">
+      <ion-item *ngFor="let sec of secretarias" class="horizontal-item" (click)="openPage(sec.link)">
+        <div class="sec-button-container">
+          <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
+          <ion-label>{{sec.tittle}}</ion-label>
+        </div>
+      </ion-item>
+    </ion-list>
+    
+    <!-- Second Line -->
+    <ion-list class="horizontal-list">
+      <ion-item *ngFor="let sec of secretarias" class="horizontal-item" (click)="openPage(sec.link)">
+        <div class="sec-button-container">
+          <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
+          <ion-label>{{sec.tittle}}</ion-label>
+        </div>
+      </ion-item>
+    </ion-list>
+  </div>
+  
 </ion-content>
