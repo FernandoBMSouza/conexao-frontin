@@ -2,8 +2,18 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button auto-hide="false"></ion-menu-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+      <ion-title>Home</ion-title>
     </ion-buttons>
-    <ion-title>home</ion-title>
+    
+    <!-- Button at the end of the toolbar -->
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -21,19 +31,19 @@
   </div>
 
   <div class="sec-list-container ion-flex">
-    <!-- First Line -->
+    <!-- First Row -->
     <ion-list class="horizontal-list">
-      <ion-item *ngFor="let sec of secretarias" class="horizontal-item" (click)="openPage(sec.link)">
+      <ion-item *ngFor="let sec of secretarias.slice(0, secretarias.length / 2)" class="horizontal-item" (click)="openPage(sec.link)">
         <div class="sec-button-container">
           <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
           <ion-label>{{sec.tittle}}</ion-label>
         </div>
       </ion-item>
     </ion-list>
-    
-    <!-- Second Line -->
+  
+    <!-- Second Row -->
     <ion-list class="horizontal-list">
-      <ion-item *ngFor="let sec of secretarias" class="horizontal-item" (click)="openPage(sec.link)">
+      <ion-item *ngFor="let sec of secretarias.slice(secretarias.length / 2)" class="horizontal-item" (click)="openPage(sec.link)">
         <div class="sec-button-container">
           <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
           <ion-label>{{sec.tittle}}</ion-label>
