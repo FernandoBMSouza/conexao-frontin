@@ -29,27 +29,33 @@
       <img alt="Logo" src=".\assets\images\logo_ver3.jpeg" />
     </ion-avatar>
   </div>
+</ion-content>
 
-  <div class="sec-list-container ion-flex">
-    <!-- First Row -->
-    <ion-list class="horizontal-list">
-      <ion-item *ngFor="let sec of secretarias.slice(0, secretarias.length / 2)" class="horizontal-item" (click)="openPage(sec.link)">
-        <div class="sec-button-container">
-          <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
-          <ion-label>{{sec.tittle}}</ion-label>
-        </div>
-      </ion-item>
-    </ion-list>
-  
-    <!-- Second Row -->
-    <ion-list class="horizontal-list">
-      <ion-item *ngFor="let sec of secretarias.slice(secretarias.length / 2)" class="horizontal-item" (click)="openPage(sec.link)">
-        <div class="sec-button-container">
-          <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
-          <ion-label>{{sec.tittle}}</ion-label>
-        </div>
-      </ion-item>
-    </ion-list>
+<ion-content>
+  <div class="horizontal-scroll-container">
+    <ion-segment [scrollable]="true" class="horizontal-segment">
+      <div class="segment-row">
+        <ion-segment-button *ngFor="let sec of secretarias.slice(0, secretarias.length / 2)" (click)="openPage(sec.link)">
+          <div class="sec-button-container">
+            <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
+            <ion-label>{{sec.tittle}}</ion-label>
+          </div>
+        </ion-segment-button>
+      </div>
+      <div class="segment-row">
+        <ion-segment-button *ngFor="let sec of secretarias.slice(secretarias.length / 2)" (click)="openPage(sec.link)">
+          <div class="sec-button-container">
+            <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
+            <ion-label>{{sec.tittle}}</ion-label>
+          </div>
+        </ion-segment-button>
+      </div>
+    </ion-segment>
   </div>
-  
+</ion-content>
+
+
+
+<ion-content>
+
 </ion-content>

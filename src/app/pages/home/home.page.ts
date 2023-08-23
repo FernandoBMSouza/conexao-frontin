@@ -15,7 +15,7 @@ export class HomePage implements OnInit {
   constructor(public nav: NavController) { }
 
   public secretarias = [
-    { tittle: 'Educação', icon: './assets/images/logo_ver4.jpeg', link: 'noticias' },
+    { tittle: 'Educação', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Saúde', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Meio Ambiente', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Obras', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
