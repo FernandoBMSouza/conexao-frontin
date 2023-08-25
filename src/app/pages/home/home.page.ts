@@ -17,23 +17,28 @@ export class HomePage implements OnInit {
   public secretarias = [
     { tittle: 'Educação', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Saúde', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Meio Ambiente', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
+    { tittle: 'Ambiente', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Obras', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Turismo', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Promoção Social', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Defesa Civil', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Limpeza Urbana', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
+    { tittle: 'Social', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Governo', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Transporte', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Esportes', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Cultura', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Agricultura', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
+    { tittle: 'Agricul', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Fazenda', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Administração', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Procuradoria', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Planejamento', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Controle Interno', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Desenvolvimento', icon: './assets/images/logo_ver4.jpeg', link: 'home' }
+    { tittle: 'Admin', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
+    { tittle: 'Procura', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
+    { tittle: 'Planej', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
+    { tittle: 'Controle', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
+    { tittle: 'Desenvol', icon: './assets/images/logo_ver4.jpeg', link: 'home' }
+  ]
+
+  public cards = [
+    { tittle: 'Oficinas', img: 'https://ionicframework.com/docs/img/demos/card-media.png', link: 'home' },
+    { tittle: 'Cursos', img: 'https://ionicframework.com/docs/img/demos/card-media.png', link: 'home' },
+    { tittle: 'Podcast', img: 'https://ionicframework.com/docs/img/demos/card-media.png', link: 'home' },
+    { tittle: 'Calendário', img: 'https://ionicframework.com/docs/img/demos/card-media.png', link: 'home' },
+    { tittle: 'Contatos', img: 'https://ionicframework.com/docs/img/demos/card-media.png', link: 'home' }
   ]
 
   openPage(x: any)

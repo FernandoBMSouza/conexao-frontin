@@ -54,8 +54,15 @@
   </div>
 </ion-content>
 
-
-
 <ion-content>
-
+  <div class="card-container">
+    <div class="card-row">
+      <ion-card *ngFor="let card of cards" (click)="openPage(card.link)">
+        <img alt="{{card.tittle}}" src="{{card.img}}" />
+        <ion-card-header>
+          <ion-card-title>{{card.tittle}}</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </div>
+  </div>
 </ion-content>

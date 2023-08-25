@@ -2,6 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+}
+
+.avatar-container ion-avatar {
+  height: 150px;
+  width: 150px;
 }
   
 .sec-button-container {
@@ -43,4 +49,31 @@
   flex: 1; 
   box-sizing: border-box;
   text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Espaço entre os cards */
+  padding: 16px; /* Espaçamento interno */
+}
+
+.card-container ion-card {
+  flex: 1; /* Distribui espaço igualmente entre os cards */
+  margin-right: 5px; /* Espaçamento entre os cards */
+}
+
+.card-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.card-row {
+  display: inline-block;
+}
+
+ion-card {
+  width: 200px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
 }
