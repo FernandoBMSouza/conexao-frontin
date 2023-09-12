@@ -20,7 +20,7 @@ export class HomePage implements OnInit {
     { tittle: 'Ambiente', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Obras', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Turismo', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Social', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
+    { tittle: 'Social', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' },
     { tittle: 'Governo', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Esportes', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Cultura', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
