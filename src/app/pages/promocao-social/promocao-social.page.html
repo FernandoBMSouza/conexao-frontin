@@ -24,3 +24,18 @@
     </ion-toolbar>
   </ion-header>
 </ion-content>
+
+<ion-content>
+  <div class="horizontal-scroll-container">
+    <ion-segment [scrollable]="true" class="horizontal-segment">
+      <div class="segment-row">
+        <ion-segment-button *ngFor="let sec of funcionarios" (click)="openPage(sec.link)">
+          <div class="person-button-container">
+            <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
+            <ion-label>{{sec.tittle}}</ion-label>
+          </div>
+        </ion-segment-button>
+      </div>
+    </ion-segment>
+  </div>
+</ion-content>
