@@ -25,17 +25,25 @@
   </ion-header>
 </ion-content>
 
-<ion-content>
-  <div class="horizontal-scroll-container">
-    <ion-segment [scrollable]="true" class="horizontal-segment">
-      <div class="segment-row">
-        <ion-segment-button *ngFor="let sec of funcionarios" (click)="openPage(sec.link)">
-          <div class="person-button-container">
-            <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
-            <ion-label>{{sec.tittle}}</ion-label>
-          </div>
-        </ion-segment-button>
-      </div>
-    </ion-segment>
+<ion-list>
+  <div class="options-list">
+    <ion-button expand="block" *ngFor="let item of options" (click)="openPage(item.link)">
+      <ion-label>{{item.tittle}}</ion-label>
+    </ion-button>
   </div>
-</ion-content>
+</ion-list>
+
+<ion-label>Funcionários</ion-label>
+<div class="horizontal-scroll-container">
+  <ion-segment [scrollable]="true" class="horizontal-segment">
+    <div class="segment-row">
+      <ion-segment-button *ngFor="let pessoa of funcionarios" (click)="openPage(pessoa.link)">
+        <div class="person-button-container">
+          <ion-avatar><img alt="Logo {{pessoa.tittle}}" [src]="pessoa.icon"></ion-avatar>
+          <ion-label>{{pessoa.tittle}}</ion-label>
+          <ion-label>{{pessoa.area}}</ion-label>
+        </div>
+      </ion-segment-button>
+    </div>
+  </ion-segment>
+</div>

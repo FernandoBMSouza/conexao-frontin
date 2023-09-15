@@ -37,9 +37,16 @@
   }
 
   .person-button-container ion-avatar {
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
   }
   
   .person-button-container ion-label {
     text-transform: capitalize;
+  }
+
+  .button {
+    height: 60px; 
+    text-transform: capitalize;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
   }

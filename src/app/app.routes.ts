@@ -29,6 +29,11 @@ export const routes: Routes = [
   {
     path: 'promocao-social',
     loadComponent: () => import('./pages/promocao-social/promocao-social.page').then( m => m.PromocaoSocialPage)
+  },
+  {
+    path: 'cras',
+    loadComponent: () => import('./pages/cras/cras.page').then( m => m.CrasPage)
   }
+
 
 ];

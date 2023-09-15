@@ -15,12 +15,20 @@ export class PromocaoSocialPage implements OnInit {
   constructor(public nav: NavController) { }
 
   public funcionarios = [
-    { tittle: 'Pessoa 1', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' },
-    { tittle: 'Pessoa 2', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' },
-    { tittle: 'Pessoa 3', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' },
-    { tittle: 'Pessoa 4', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' },
-    { tittle: 'Pessoa 5', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' },
-    { tittle: 'Pessoa 6', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' }
+    { tittle: 'Pessoa 1', area:'teste', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' },
+    { tittle: 'Pessoa 2', area:'teste', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' },
+    { tittle: 'Pessoa 3', area:'teste', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' },
+    { tittle: 'Pessoa 4', area:'teste', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' },
+    { tittle: 'Pessoa 5', area:'teste', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' },
+    { tittle: 'Pessoa 6', area:'teste', icon: './assets/images/logo_ver4.jpeg', link: 'promocao-social' }
+  ]
+
+  public options = [
+    { tittle: 'CRAS', link: 'cras' },
+    { tittle: 'CREAS', link: 'cras' },
+    { tittle: 'Bolsa Família', link: 'cras' },
+    { tittle: 'Cesta Básica', link: 'cras' },
+    { tittle: 'CAD Único', link: 'cras' }
   ]
 
   openPage(x: any)
@@ -30,5 +38,4 @@ export class PromocaoSocialPage implements OnInit {
 
   ngOnInit() {
   }
-
 }
