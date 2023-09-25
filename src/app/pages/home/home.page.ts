@@ -24,13 +24,13 @@ export class HomePage implements OnInit {
     { tittle: 'Governo', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Esportes', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Cultura', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Agricul', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
+    { tittle: 'Agricultura', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Fazenda', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Admin', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Procura', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Planej', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
+    { tittle: 'Administração', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
+    { tittle: 'Procuradoria', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
+    { tittle: 'Planejamento', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
     { tittle: 'Controle', icon: './assets/images/logo_ver4.jpeg', link: 'home' },
-    { tittle: 'Desenvol', icon: './assets/images/logo_ver4.jpeg', link: 'home' }
+    { tittle: 'Desenvolvimento', icon: './assets/images/logo_ver4.jpeg', link: 'home' }
   ]
 
   public cards = [

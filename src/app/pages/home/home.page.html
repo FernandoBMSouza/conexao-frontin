@@ -18,51 +18,32 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">home</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-avatar id="logo">
+    <img alt="Logo" src=".\assets\images\logo_ver3.jpeg" />
+  </ion-avatar>
 
-  <div class="avatar-container">
-    <ion-avatar>
-      <img alt="Logo" src=".\assets\images\logo_ver3.jpeg" />
-    </ion-avatar>
-  </div>
-</ion-content>
-
-<ion-content>
-  <div class="horizontal-scroll-container">
-    <ion-segment [scrollable]="true" class="horizontal-segment">
-      <div class="segment-row">
-        <ion-segment-button *ngFor="let sec of secretarias.slice(0, secretarias.length / 2)" (click)="openPage(sec.link)">
-          <div class="sec-button-container">
-            <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
-            <ion-label>{{sec.tittle}}</ion-label>
-          </div>
-        </ion-segment-button>
-      </div>
-      <div class="segment-row">
-        <ion-segment-button *ngFor="let sec of secretarias.slice(secretarias.length / 2)" (click)="openPage(sec.link)">
-          <div class="sec-button-container">
-            <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
-            <ion-label>{{sec.tittle}}</ion-label>
-          </div>
-        </ion-segment-button>
-      </div>
+  <ion-segment [scrollable]="true">
+    <ion-segment>
+      <ion-segment-button *ngFor="let sec of secretarias.slice(0, secretarias.length / 2)" (click)="openPage(sec.link)">
+        <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
+        <ion-label>{{sec.tittle}}</ion-label>
+      </ion-segment-button>
     </ion-segment>
-  </div>
-</ion-content>
 
-<ion-content>
+    <ion-segment>
+      <ion-segment-button *ngFor="let sec of secretarias.slice(secretarias.length / 2)" (click)="openPage(sec.link)">
+        <ion-avatar><img alt="Logo {{sec.tittle}}" [src]="sec.icon"></ion-avatar>
+        <ion-label>{{sec.tittle}}</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-segment>
+  
   <div class="card-container">
-    <div class="card-row">
-      <ion-card *ngFor="let card of cards" (click)="openPage(card.link)">
-        <img alt="{{card.tittle}}" src="{{card.img}}" />
-        <ion-card-header>
-          <ion-card-title>{{card.tittle}}</ion-card-title>
-        </ion-card-header>
-      </ion-card>
-    </div>
+    <ion-card *ngFor="let card of cards" (click)="openPage(card.link)">
+      <img alt="{{card.tittle}}" src="{{card.img}}" />
+      <ion-card-header>
+        <ion-card-title>{{card.tittle}}</ion-card-title>
+      </ion-card-header>
+    </ion-card>
   </div>
 </ion-content>

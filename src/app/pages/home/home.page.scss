@@ -1,72 +1,26 @@
-.avatar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+#logo {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
-.avatar-container ion-avatar {
-  height: 150px;
-  width: 150px;
-}
-
-.sec-button-container ion-avatar {
-  margin-bottom: 10px;
-}
-
-.sec-button-container ion-label {
+ion-label {
   text-transform: capitalize;
 }
 
-.horizontal-scroll-container {
-  display: flex;
-  overflow-x: auto;
+ion-card {
+  width: 60%;
+  display: inline-block;
 }
 
-.horizontal-segment {
-  overflow: hidden;
-  flex: 0 0 auto;
-}
-
-.segment-row {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.sec-button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1; 
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.card-container {
-  display: flex;
-  justify-content: space-between; /* Espaço entre os cards */
-  padding: 16px; /* Espaçamento interno */
-}
-
-.card-container ion-card {
-  flex: 1; /* Distribui espaço igualmente entre os cards */
-  margin-right: 5px; /* Espaçamento entre os cards */
+ion-card:active {
+  border: 2px solid #007bff;
 }
 
 .card-container {
   overflow-x: scroll;
   white-space: nowrap;
-}
-
-.card-row {
-  display: inline-block;
-}
-
-ion-card {
-  width: 200px;
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: top;
 }
